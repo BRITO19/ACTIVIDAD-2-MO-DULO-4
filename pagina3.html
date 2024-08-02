@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 2 MÓDULO 4</title>
+</head>
+<body>
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="style.css">
+    <img src="imagenes/logo-infotep-slide.png" class="imagenes">
+    <h1 class="titulo1">ACTIVIDAD 2 MÓDULO 4 (Análisis y diseño de sistemas)</h1>
+<ol start="7">
+    
+        <li id="preguntas">Elabora un conjunto de normas y estándares que deben seguirse en el desarrollo
+            de software para garantizar la consistencia en la codificación y la documentación.
+            Proporciona ejemplos concretos de cómo se aplicarían estas normas en la práctica.</li>
+     <p id="preguntas">1. Normas de Codificación</p>
+     <p id="preguntas">1.1. Estilo de Codificación</p>
+    <ul id="p">
+        <li>Convenciones de Nombres:</li>
+        <li>Variables: Usar camelCase (ej. totalAmount).</li>
+        <li>Funciones y Métodos: Usar camelCase (ej. calculateTotal()).</li>
+        <li>Clases y Tipos: Usar PascalCase (ej. OrderProcessor).</li>
+        <li> Constantes: Usar UPPER_SNAKE_CASE (ej. MAX_RETRY_COUNT)</li>
+    </ul>
+    <p id="preguntas">Formato del Código:
+    </p>
+    <ul id="p">
+        <li>Indentación: Usar 2 o 4 espacios (nunca tabulaciones). Definir en el archivo
+            .editorconfig.</li>
+        <li>Líneas: Mantener las líneas de código a un máximo de 80-120 caracteres.</li>
+        <li>Espaciado: Usar espacios alrededor de operadores y después de comas, pero no
+            antes de puntos y comas.
+            </li>
+    </ul>
+    <p id="preguntas">1.2. Estructura del Código
+    </p>
+    <ul id="p">
+        <li>Longitud de Métodos: Los métodos deben ser cortos y realizar una sola tarea.
+            Idealmente, no más de 20-30 líneas.</li>
+        <li>División de Clases: Una clase debe tener una única responsabilidad. Usar la
+            técnica de Single Responsibility Principle (SRP).
+            </li>
+        <li>Comentarios: Comentar el código que no es obvio. Usar comentarios TODO para
+            tareas pendientes y FIXME para errores conocidos.</li>
+    
+    </ul>
+    <p id="preguntas">1.3. Manejo de Errores</p>
+    <ul id="p">
+        <li>Excepciones: Manejar las excepciones de manera específica y no genérica. No
+            capturar Exception en bloques amplios.</li>
+        <li>Registro de Errores: Implementar un sistema de logging para registrar errores y
+            eventos importantes.</li>
+    </ul>
+    <p id="preguntas">1.4. Control de Versiones</p>
+    <ul id="p">
+        <li>Mensajes de Commit: Los mensajes deben ser claros y descriptivos. Usar el
+            formato de "Tipo: Descripción" (ej. Fix: Corregir error en la autenticación).
+            </li>
+        <li>Branches: Usar ramas para cada característica o corrección de errores, y seguir la
+            convención feature/, bugfix/, hotfix/.
+            </li>
+    </ul>
+    <p id="preguntas">2. Normas de Documentación</p>
+    <p id="preguntas">2.1. Documentación del Código
+    </p>
+    <ul id="p">
+        <p id="preguntas">Comentarios Inline:</p>
+
+        <li>Funciones y Métodos: Describir qué hace la función, los parámetros y el valor de
+            retorno</li>
+        <li>Clases: Describir la responsabilidad de la clase y los métodos principales</li>
+       
+    </ul>
+    <ul id="p">
+        <p id="preguntas">Documentación API:
+        </p>
+
+        <li>Formato: Usar comentarios en formato estándar como Javadoc, Doxygen, o
+            Swagger para APIs REST.</li>
+        <li>Detalles: Incluir información sobre endpoints, parámetros, tipos de datos, y
+            respuestas esperadas.
+            </li>  
+    </ul>
+    <p id="preguntas">2.2. Documentación Técnica</p>
+    <ul id="p">
+        <p id="preguntas">Documentación de Arquitectura:
+
+        </p>
+
+        <li>Descripción: Incluir diagramas y descripciones de la arquitectura del sistema,
+            componentes, y sus interacciones.
+            </li>
+        <li>Formato: Usar herramientas como UML para diagramas.
+            </li>  
+    </ul>
+    
+    <ul id="p">
+        </p>
+        <p id="preguntas">Documentación de Diseño:</p>
+        <li>Descripción: Documentar el diseño de la base de datos, esquemas de datos, y
+            flujos de trabajo.
+            
+            </li>
+        <li>Formato: Usar diagramas de entidad-relación (ERD), diagramas de flujo, y
+            descripciones detalladas.
+            
+            </li>  
+    </ul>
+    
+    <ul id="p">
+        </p>
+        <p id="preguntas">Documentación de Instalación y Configuración:</p>
+        <li>Descripción: Incluir guías paso a paso para la instalación del sistema, configuración
+            de entornos, y despliegue.
+            
+            </li>
+        <li>Formato: Incluir ejemplos de archivos de configuración y comandos necesarios.
+            
+            </li>  
+    </ul>
+    <p id="preguntas">2.3. Documentación de Usuario
+    </p>
+    <ul id="p">
+        </p>
+        <p id="preguntas">Guías de Usuario:
+        </p>
+        <li>Descripción: Crear guías detalladas sobre cómo usar las características del
+            software.
+            </li>
+        <li>Formato: Usar capturas de pantalla, ejemplos y tutoriales paso a paso.</li>  
+    </ul>
+</ul>
+<p id="preguntas">Documentación de Ayuda:</p>
+<ul id="p">
+    </p>
+
+    <li>Descripción: Proveer una sección de ayuda dentro del software para que los
+        usuarios puedan resolver problemas comunes.
+        
+        </li>
+    <li>Formato: Usar una combinación de texto, imágenes, y vídeos si es posible.
+        
+        </li>  
+</ul>
+<p id="preguntas">3. Normas de Calidad
+<p id="preguntas">3.1. Pruebas
+</p>
+</p>
+<ul id="p">
+    </p>
+    <p id="preguntas">Cobertura de Pruebas:
+    </p>
+    <li>Unidad: Todas las unidades de código deben tener pruebas asociadas.
+        </li>
+    <li>Integración: Probar la integración entre componentes y sistemas externos.</li>  
+    <li>E2E (End-to-End): Validar el flujo completo de la aplicación desde el punto de vista
+        del usuario.
+    </li>
+<li>Herramientas: Usar herramientas de CI/CD para ejecutar pruebas automáticamente
+    en cada commit.</li>  
+</ul>
+</ul>
+<p id="preguntas">3.2. Revisión de Código
+</p>
+<ul id="p">
+    </p>
+<p id="preguntas">Proceso de Revisión:
+</p>
+    <li>Peer Reviews: Realizar revisiones de código por parte de compañeros antes de
+        fusionar cambios.
+        
+        </li>
+    <li>Checklist: Usar una lista de verificación para asegurar que se cumplan las normas
+        de codificación y estándares de documentación.
+        
+        </li>  
+</ul>
+<p id="preguntas">4. Normas de Seguridad
+<p id="preguntas"> 4.1. Gestión de Credenciales
+</p>
+<ul id="p">
+    <li>Almacenamiento: No almacenar credenciales en el código fuente. Usar servicios de
+        gestión de secretos.
+        </li>
+        <li>Acceso: Limitar el acceso a credenciales y datos sensibles a los miembros del
+            equipo que lo necesiten.</li>
+</ul>
+<p id="preguntas">4.2. Validación de Entrada
+
+</p>
+<ul id="p">
+    <li>Sanitización: Sanitizar todas las entradas del usuario para prevenir ataques de
+        inyección.
+        </li>
+        <li>Validación: Validar las entradas del usuario en el servidor y el cliente.</li>
+</ul>
+<p id="preguntas"> 4.3. Seguridad en el Código
+
+</p>
+<ul id="p">
+    <li>Dependencias: Usar herramientas de análisis de seguridad para identificar
+        vulnerabilidades en las dependencias de terceros.
+        </li>
+        <li>Actualización: Mantener las bibliotecas y dependencias actualizadas con los
+            últimos parches de seguridad.
+            </li>
+</ul>
+
+    
+ </ol>
+</body>
+<footer>
+    <div id="footer">
+       <a href="index.html", class="btn">1</a>
+       <a href="pagina2.html", class="btn">2</a>
+       <a href="pagina3.html", class="btn">3</a>
+    </div>
+   </footer>
+</html>

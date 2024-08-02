@@ -1,0 +1,47 @@
+.titulo1 {
+    color: rgb(14, 116, 199);
+    text-align: center;
+}
+
+#preguntas{
+    
+   font-weight: bold;
+   font-size: x-large;
+}
+
+#lista{
+    font-weight: bold;
+}
+
+#p{
+ font-size:x-large;
+}
+
+#footer{
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Importante para los enlaces */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    transform: scale(0.95);}
+
+body{
+    background-color:rgb(245, 250, 255);
+}
