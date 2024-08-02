@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 2 MÓDULO 4</title>
+</head>
+<body>
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="style.css">
+    <img src="logo-infotep-slide.png" class="imagenes">
+    <h1 class="titulo1">ACTIVIDAD 2 MÓDULO 4 (Análisis y diseño de sistemas)</h1>
+
+   
+    <ol>
+        
+        <li id="preguntas">¿Qué son los Modelos de estimación?</p></li>
+        <p id="p">Los métodos de estimación de proyectos son técnicas que te ayudan a estimar con
+            precisión el tiempo, el presupuesto y los recursos necesarios para completar un proyecto
+            con éxito.</p>
+        <li id="preguntas">Investiga sobre diferentes modelos de estimación utilizados en la industria del
+                desarrollo de software, como el modelo COCOMO o el método de puntos de función.
+                Compara y contrasta dos modelos de estimación y explica en qué situaciones serían
+                más adecuados.
+                </li>
+                <p id="preguntas">Modelo COCOMO (Constructive Cost Model)</p>
+                <p id="p">Desarrollado por Barry Boehm en 1981, el modelo COCOMO es uno de los modelos de
+                    estimación de costos más conocidos y utilizados. Hay tres versiones principales del
+                    modelo COCOMO:</p>
+                <p id="p">COCOMO Básico: Estima el esfuerzo necesario para desarrollar un proyecto basado en
+                    el tamaño del software, medido en líneas de código (LOC). La fórmula básica es:</p>
+                    <p id="p">𝐸 = 𝑎 × (𝐾𝐿𝑂𝐶)𝑏</p>
+                <p id="p">donde E es el esfuerzo en persona-meses, KLO es el número de mil líneas de código, y a
+                    y b son parámetros ajustables basados en la complejidad del proyecto</p>
+                <p id="p">COCOMO Intermedio: Añade factores de costo adicionales que reflejan características
+                    del proyecto, como la experiencia del equipo y las características del software. Usa una
+                    fórmula más compleja que incluye multiplicadores para estos factores.</p>
+                <p id="p">COCOMO Avanzado: Incluye un modelo más detallado que considera fases del ciclo de
+                    vida del software y otros factores, proporcionando una estimación más precisa. Se basa
+                    en un enfoque de regresión múltiple que considera 15 factores de costo.</p>
+                <p  id="preguntas">Método de Puntos de Función (Function Point Analysis - FPA)</p>
+                <p id="p">El método de puntos de función se centra en medir el tamaño del software basado en la
+                    funcionalidad que ofrece al usuario. Fue desarrollado por Allan Albrecht en 1979 y se
+                    basa en el conteo de los componentes funcionales del software, tales como:</p>
+                    <ul id="p">
+                        <li>Entradas externas: Datos que entran en el sistema.</li>
+                        <li>Salidas externas: Datos que salen del sistema.</li>
+                        <li>Consultas internas: Peticiones para información del sistema.</li>
+                        <li>Archivos lógicos internos: Datos almacenados dentro del sistema</li>
+                        <li>Archivos de interfaz externa: Datos almacenados fuera del sistema, pero utilizados
+                            por él.</li>
+                    <p id="p">Cada componente se clasifica y se le asigna un valor en puntos de función. La fórmula
+                        para estimar el tamaño del software es:</p>
+                    <p id="p">Puntos de Función=Suma de los puntos asignados a cada componente.</p>
+                    <p id="preguntas">Comparación y Elección del Modelo </p>
+                    <p id="p">Precisión y Relevancia: Si el proyecto tiene especificaciones funcionales bien definidas
+                        y se espera que cambie poco, el Método de Puntos de Función puede ofrecer una
+                        estimación más relevante ya que mide la funcionalidad en lugar de las líneas de código.
+                        Sin embargo, si se está trabajando en un proyecto donde se puede estimar el tamaño en
+                        LOC con precisión, el Modelo COCOMO puede ser más útil, especialmente en sus
+                        versiones más avanzadas que ajustan la estimación basándose en múltiples factores.</p>
+                    <p id="p">Tipo de Proyecto: El Modelo COCOMO puede ser más útil para proyectos grandes y
+                        complejos donde se puede estimar el tamaño del código, mientras que el Método de
+                        Puntos de Función es más adecuado para proyectos donde la funcionalidad y los
+                        requisitos están claramente definidos.</p>
+                    <p id="p">En resumen, la elección entre COCOMO y el Método de Puntos de Función dependerá de
+                        la naturaleza del proyecto, la disponibilidad de datos y la precisión requerida en la
+                        estimación.</p>                
+                </ul>
+        <li id="preguntas">¿A que llamamos la estimación de un proyecto de software?</li>    
+                <p id="p">Una estimación de software es una predicción de cuánto tiempo durará o costará su
+                desarrollo y mantenimiento. Si se trata de una estimación de tiempo, el esfuerzo puede
+                expresarse en horas-persona u otra unidad, si se trata de estimación de costo, se puede
+                expresar en la moneda de preferencia.</p>    
+        <li id="preguntas">Enumera y explica brevemente los principios esenciales para el desarrollo de
+            sistemas, como la modularidad, la cohesión, el acoplamiento y la abstracción. Elige
+            uno de los principios y da un ejemplo de cómo se podría aplicar en el desarrollo de
+            un sistema.
+            </li>    
+            <p id="p">La modularidad es el principio de dividir un sistema en partes o módulos independientes
+                y manejables. Cada módulo debe tener una funcionalidad específica y debe ser
+                independiente de otros módulos tanto como sea posible</p>
+            <p id="p">La cohesión se refiere a la medida en que las operaciones dentro de un módulo están
+                relacionadas entre sí y contribuyen al mismo propósito. Un módulo con alta cohesión
+                realiza una tarea específica y clara.
+                </p>
+            <p id="p">El acoplamiento se refiere al grado en que un módulo depende de otros módulos. Un
+                acoplamiento bajo significa que los módulos son independientes entre sí, mientras que un
+                acoplamiento alto indica que los módulos están fuertemente interconectados.
+                </p>
+            <p id="p">La abstracción es el principio de ocultar los detalles complejos de implementación y
+                mostrar solo la funcionalidad esencial. Permite al desarrollador trabajar con conceptos de
+                alto nivel sin preocuparse por los detalles específicos.
+                </p>
+            <p id="preguntas">Ejemplo de Aplicación del Principio de Cohesión
+            <p id="p">Vamos a aplicar el principio de cohesión en el desarrollo de un sistema simple de gestión
+                de tareas. En este sistema, queremos asegurarnos de que cada módulo tiene una única
+                responsabilidad bien definida.</p>
+            <p id="preguntas">Diseño Inicial (Baja Cohesión)</p>
+            <p id="p">En un diseño inicial, podríamos tener una clase TaskManager que maneje tanto la lógica
+                de tareas como el almacenamiento de datos y las notificaciones:</p>
+            <img src="ejemplo1.png">
+            <p id="p">En este diseño, TaskManager tiene múltiples responsabilidades: gestionar tareas,
+                almacenar datos y enviar notificaciones. Esto resulta en baja cohesión porque el módulo
+                está realizando varias tareas no relacionadas directamente entre sí.</p>
+            <p id="preguntas">Aplicación del Principio de Cohesión</p>
+            <p id="p">Para aplicar el principio de cohesión, podemos dividir TaskManager en varios módulos,
+                cada uno con una única responsabilidad:
+                </p>
+            <p id="p">Módulo de Gestión de Tareas</p>
+            <img src="ejemplo2.png" title="Módulo de Gestión de Tareas">
+            <p id="p">Módulo de Almacenamiento</p>
+            <img src="ejemplo3.png" title="Módulo de Almacenamiento">
+            <p id="p">Módulo de Notificaciones</p>
+            <img src="ejemplo4.png" title="Módulo de Notificaciones">
+            <p id="p">Uso del Sistema</p>
+            <img src="ejemplo5.png" title="Uso del Sistema"><br><br>
+
+            <li id="preguntas">Crea una lista de las partes interesadas (stakeholders) que podrían estar
+                involucradas en un proyecto de desarrollo de software para una aplicación móvil.
+                Para cada parte interesada, identifica sus roles, responsabilidades y posibles
+                expectativas con respecto al proyecto</li>
+                
+            <p id="preguntas">Clientes/Usuarios Finales</p>
+            <ul id="p">
+                <li>Roles: Usuarios que usarán la aplicación.</li>
+                <li>Responsabilidades: Proporcionar requisitos y feedback.</li>
+                <li>Expectativas: Aplicación funcional, fácil de usar, que cumpla con sus necesidades
+                    y tenga un buen rendimiento.</li>
+            </ul>
+        
+            <p id="preguntas">Patrocinadores del Proyecto</p>
+            <ul id="p">
+                <li>Roles: Proporcionan financiamiento y recursos para el proyecto</li>
+                <li>Responsabilidades: Asegurar que el proyecto tenga el presupuesto necesario y la
+                    aprobación ejecutiva.
+                    </li>
+                <li>Expectativas: Cumplimiento de plazos y presupuesto, retorno de inversión
+                    positivo, y cumplimiento con los objetivos del negocio.</li>
+            </ul>
+        
+            <p id="preguntas">Gerente de Proyecto</p>
+            <ul id="p">
+                <li>Roles: Responsable de la planificación, ejecución y cierre del proyecto.
+                </li>
+                <li>Responsabilidades: Coordinar equipos, gestionar cronograma, presupuesto, y
+                    asegurar que los entregables se ajusten a los requisitos</li>
+                <li>Expectativas: Entregables a tiempo, dentro del presupuesto y de acuerdo a los
+                    requisitos y estándares de calidad.</li>
+            </ul>
+        
+            <p id="preguntas">Equipo de Desarrollo (Desarrolladores, Programadores)
+            </p>
+            <ul id="p">
+                <li>Roles: Crear el software según los requisitos</li>
+                <li>Responsabilidades: Implementar la funcionalidad, escribir código, realizar
+                    pruebas unitarias, y solucionar problemas técnicos.</li>
+                <li>Expectativas: Requisitos claros, tiempo suficiente para el desarrollo, y acceso a
+                    herramientas y recursos necesarios..</li>
+            </ul>
+        
+            <p id="preguntas">Diseñadores UX/UI</p>
+            <ul id="p">
+                <li>Roles: Diseñar la interfaz y la experiencia de usuario.</li>
+                <li>Responsabilidades: Crear wireframes, prototipos, y diseños visuales, y asegurar
+                    que la aplicación sea intuitiva y atractiva.</li>
+                <li>Expectativas: Retroalimentación y revisiones claras, acceso a información sobre el
+                    usuario y los requisitos del producto.</li>
+            </ul>            
+              
+            <p id="preguntas">Equipo de Control de Calidad (QA)</p>
+            <ul id="p">
+                <li>Roles: Garantizar que el software funcione correctamente y cumpla con los
+                    estándares de calidad.</li>
+                <li>Responsabilidades: Realizar pruebas de la aplicación (pruebas funcionales, de
+                    rendimiento, de usabilidad, etc.), identificar errores y asegurar que se solucionen.</li>
+                <li>Expectativas: Acceso a versiones de prueba estables, y un proceso de resolución
+                    de errores eficiente</li>
+            </ul>
+            <p id="preguntas">Arquitecto de Software</p>
+            <ul id="p">
+                <li>Roles: Diseñar la arquitectura técnica de la aplicación.</li>
+                <li>Responsabilidades: Definir la estructura y los componentes técnicos del software,
+                    asegurar escalabilidad y mantenibilidad.</li>
+                <li>Expectativas: Requisitos técnicos claros, y colaboración con el equipo de desarrollo
+                    para la implementación.</li>
+            </ul>
+            <p id="preguntas">Administradores de Sistema y Infraestructura</p>
+            <ul id="p">
+                <li>Descripción: Encargados de probar la aplicación</li>
+                <li>Rol: Realizan pruebas para detectar y corregir errores, asegurando que la
+                    aplicación funcione como se espera.</li>
+            </ul>
+            <p id="preguntas">Equipo de Control de Calidad (QA)
+            </p>
+            <ul id="p">
+                <li>Roles: Usuarios que usarán la aplicación.</li>
+                <li>Responsabilidades: Proporcionar requisitos y feedback.</li>
+                <li>Expectativas: Aplicación funcional, fácil de usar, que cumpla con sus necesidades
+                    y tenga un buen rendimiento.</li>
+            </ul>
+            <p id="preguntas">Reguladores y Cumplimiento Legal
+            </p>
+            <ul id="p">
+                <li>Roles: Asegurar que la aplicación cumpla con las leyes y regulaciones aplicables.</li>
+                <li>Responsabilidades: Revisar la aplicación para garantizar el cumplimiento con
+                    normas legales y regulatorias, como protección de datos y derechos de autor.</li>
+                <li>Expectativas: Cumplimiento de regulaciones locales e internacionales, y la
+                    implementación de prácticas adecuadas de protección de datos.</li>
+            </ul>
+              
+    </ol>
+
+    
+</body>
+<footer>
+    <div id="footer">
+       <a href="index.html", class="btn">1</a>
+       <a href="pagina2.html", class="btn">2</a>
+       <a href="pagina3.html", class="btn">3</a>
+    </div>
+   </footer>
+</html>
